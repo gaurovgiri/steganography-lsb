@@ -66,7 +66,6 @@ class stegg:
                     len_bytes = list(format(image[-i][-j][0], 'b').zfill(8))
                     msg_len.append(len_bytes[-1])
             msg_len = int(''.join(msg_len), 2)
-            print(msg_len)
         except BaseException:
             print("Error Occurred during Extraction of Message Length")
 
